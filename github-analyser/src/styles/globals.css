@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef2f7, #f8fafc);
+  color: #1f2937;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Headings */
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #2563eb;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+button {
+  margin-top: 16px;
+  padding: 14px 24px;
+  font-size: 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s;
+}
+
+button:hover {
+  background: #1e4fd8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Result Card */
+.card {
+  margin-top: 35px;
+  padding: 25px;
+  background: #f9fafb;
+  border-radius: 14px;
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Score */
+.score {
+  font-size: 36px;
+  font-weight: 700;
+  color: #16a34a;
+  animation: popIn 0.4s ease-out;
+}
+
+/* Summary */
+.summary {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Roadmap */
+.roadmap {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.roadmap li {
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.roadmap li:nth-child(1) { animation-delay: 0.1s; }
+.roadmap li:nth-child(2) { animation-delay: 0.2s; }
+.roadmap li:nth-child(3) { animation-delay: 0.3s; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
