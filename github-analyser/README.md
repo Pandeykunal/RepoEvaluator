@@ -7,6 +7,13 @@ I built this project to understand how real-world projects are evaluated and how
 
 ---
 
+## Demo
+
+Live App: https://repoevaluate.netlify.app/
+Demo Video: https://<your-video-link>
+
+---
+
 ## What does it do?
 
 - Takes a **public GitHub repository URL**
@@ -28,11 +35,11 @@ The focus is on **clarity and usefulness**, not complex AI claims.
    - README length
    - Number of languages used
    - Repository size
-   - Stars, forks, and issues
-4. Based on these checks, a rule-based score is calculated
-5. Results are shown in a clean UI
+   - Stars, forks, and issues  
+4. Based on these checks, a rule-based score is calculated  
+5. Results are shown in a clean and easy-to-understand UI
 
-All logic is transparent and easy to understand.
+All logic is transparent and intentionally kept simple.
 
 ---
 
@@ -45,30 +52,20 @@ All logic is transparent and easy to understand.
 
 ---
 
-## Example repositories to test
-
-You can try the app with:
-
-- https://github.com/facebook/react
-- https://github.com/vercel/next.js
-- https://github.com/axios/axios
-
----
-
 ## Limitations
 
 - Only works for **public GitHub repositories**
 - GitHub API rate limits apply
-- Does not do deep code-level analysis
+- Does not perform deep code-level analysis
 
-These limitations are acceptable for this demo and were kept intentionally to keep the project simple.
+These limitations are acceptable for this demo and were kept intentionally to keep the project focused and simple.
 
 ---
 
 ## Why no backend?
 
 This version is frontend-only to keep the project lightweight and easy to understand.  
-In a real production system, the GitHub API logic and authentication would be moved to a backend for better security and scalability.
+In a real production setup, GitHub API handling and authentication would be moved to a backend for better security and scalability.
 
 ---
 
@@ -83,6 +80,6 @@ In a real production system, the GitHub API logic and authentication would be mo
 
 ## Author
 
-Built by **[Your Name]**  
-B.Tech Student  
+Built by **Kunal Pandey**  
+3rd year B.Tech Student  
 GitGrade Hackathon Submission
